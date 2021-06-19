@@ -12,7 +12,7 @@ export class Registro {
     constructor(format: string, text: string) {
 
         this.format  = format;
-        this.text    = this.text;
+        this.text    = text;
         this.created = new Date(); //Determino fecha de creacion
 
         this.determinarTipo(); //Determina el tipo
