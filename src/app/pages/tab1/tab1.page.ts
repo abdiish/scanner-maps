@@ -32,7 +32,8 @@ scan() {
 
    }).catch(err => {
        console.log('Error', err);
-       this.dataLocal.guardarRegistro('QRCode', 'https://fernando-herrera.com');
+       /* this.dataLocal.guardarRegistro('QRCode', 'https://fernando-herrera.com'); */
+       this.dataLocal.guardarRegistro('QRCode', 'geo:19.432747,-99.132900');
    });
 }
 
