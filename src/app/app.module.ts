@@ -13,6 +13,8 @@ import { BarcodeScanner} from '@ionic-native/barcode-scanner/ngx';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
+import { File } from '@ionic-native/file/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -22,7 +24,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
       IonicStorageModule.forRoot(), 
       AppRoutingModule,  
       ],
-  providers: [BarcodeScanner, InAppBrowser, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [BarcodeScanner, InAppBrowser, File, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
